@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  .container-input {
+    gap: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .container-chart {
+    max-width: 600px;
+    margin: 100px auto 100px auto;
+    display: table;
+  }
+
+  .container-button {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(175, 175, 175);
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button-group button {
+    flex-basis: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .button-generate {
+    background-color: #474747;
+    color: #f0f0f0;
+  }
+
+  .button-save {
+    background-color: #d6d6d6;
+    color: #474747;
+  }
+
+  @media screen and (max-width: 480px) {
+    .button-group {
+      flex-direction: column;
+    }
+
+    .button-group button {
+      flex-basis: auto;
+      margin-bottom: 10px;
+    }
+  }

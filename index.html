@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-chart">
+        <div id="candlesChart"></div>
+    </div>
+
+    <!-- <hr style="max-width: 600px; opacity: 20%;"> -->
+
+    <div class="container-input">
+        <div class="input-group">
+          <label for="input1">Bucket</label>
+          <input type="text" id="bucketInput" value="30">
+        </div>
+        <div class="input-group">
+          <label for="input2">Height</label>
+          <input type="text" id="heightInput" value="300">
+        </div>
+        <div class="input-group">
+          <label for="input3">Width</label>
+          <input type="text" id="widthInput" value="600">
+        </div>
+        <div class="input-group">
+          <label for="input4">Candle wick</label>
+          <input type="text" id="candleWickInput" value="1">
+        </div>
+        <div class="input-group">
+          <label for="input5">Candle body</label>
+          <input type="text" id="candleBodyInput" value="5">
+        </div>
+    </div>
+    <div class="container-button">
+        <div class="button-group">
+            <button onclick="regenerateChart()" id="regenerateButton" type="button" class="button-generate">Generate new</button>
+            <button onclick="saveChart()" id="saveButton" type="button" class="button-save">Save as SVG</button>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="candles-test-v2.js"></script>
+</html>
